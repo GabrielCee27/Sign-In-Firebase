@@ -13,6 +13,7 @@
 		25BE23281F8D91F00066DAA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BE23271F8D91F00066DAA1 /* Assets.xcassets */; };
 		25BE232B1F8D91F00066DAA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BE23291F8D91F00066DAA1 /* LaunchScreen.storyboard */; };
 		25BE23331F8D94240066DAA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25BE23321F8D94240066DAA1 /* GoogleService-Info.plist */; };
+		25BE23351F8DA7290066DAA1 /* LoggedInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BE23341F8DA7290066DAA1 /* LoggedInVC.swift */; };
 		543C0DCDC131D84BA5B4862A /* Pods_sign_in_firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB993E5A3D99FCF4C0D995B /* Pods_sign_in_firebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		25BE232A1F8D91F00066DAA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25BE232C1F8D91F00066DAA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25BE23321F8D94240066DAA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		25BE23341F8DA7290066DAA1 /* LoggedInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInVC.swift; sourceTree = "<group>"; };
 		4AB993E5A3D99FCF4C0D995B /* Pods_sign_in_firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sign_in_firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5274EEDC137B172CFEC77F98 /* Pods-sign_in_firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sign_in_firebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-sign_in_firebase/Pods-sign_in_firebase.release.xcconfig"; sourceTree = "<group>"; };
 		D5CE34CC06D2CB94A3DB77E0 /* Pods-sign_in_firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sign_in_firebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sign_in_firebase/Pods-sign_in_firebase.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				25BE23201F8D91F00066DAA1 /* AppDelegate.swift */,
 				25BE23221F8D91F00066DAA1 /* ViewController.swift */,
+				25BE23341F8DA7290066DAA1 /* LoggedInVC.swift */,
 				25BE23241F8D91F00066DAA1 /* Main.storyboard */,
 				25BE23271F8D91F00066DAA1 /* Assets.xcassets */,
 				25BE23291F8D91F00066DAA1 /* LaunchScreen.storyboard */,
@@ -204,11 +207,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-sign_in_firebase/Pods-sign_in_firebase-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25BE23351F8DA7290066DAA1 /* LoggedInVC.swift in Sources */,
 				25BE23231F8D91F00066DAA1 /* ViewController.swift in Sources */,
 				25BE23211F8D91F00066DAA1 /* AppDelegate.swift in Sources */,
 			);
@@ -393,6 +399,7 @@
 				25BE23311F8D91F00066DAA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
